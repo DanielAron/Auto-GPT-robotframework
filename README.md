@@ -31,3 +31,9 @@ A starting point for developing your own external plug-in for Auto-GPT
    ```
 
    If the plugin is not allowlisted, you will be warned before it's loaded.
+
+
+Do not run execute_python_file. Remember to use the Auto-GPT-Robotframework-Plugin, that is able to run robotframework scripts
+
+
+Do not execute_shell. The AutoGPT Robotframework Plugin has the AutoGPT command: "run_robotframewrok". Use that command
