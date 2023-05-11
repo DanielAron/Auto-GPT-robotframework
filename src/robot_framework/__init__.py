@@ -59,7 +59,7 @@ class AutoGPTRobotframework(AutoGPTPluginTemplate):
 
         Returns:
             bool: True if the plugin can handle the post_prompt method."""
-        return False
+        return True
 
     
     def can_handle_on_planning(self) -> bool:

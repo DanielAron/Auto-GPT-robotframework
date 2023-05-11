@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from robot import run, run_cli, rebot_cli
 
-def run_robotframework(file_path):
+def run_robotframework():
     print("hia")
     print("file_path")
 
@@ -32,8 +32,7 @@ def run_robotframework(file_path):
     # RUN BOT
     run_cli(['--name', keyword] + common, exit=False)
 
-
-    return file_path
+    return "done"
 
 if __name__ == "__main__":
-    run_robotframework('un file_path')
+    run_robotframework()
