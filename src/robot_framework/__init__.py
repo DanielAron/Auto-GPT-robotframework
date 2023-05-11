@@ -26,6 +26,7 @@ class AutoGPTRobotframework(AutoGPTPluginTemplate):
 
     
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
+        from .robot_framework import(run_robotframework)
 
         prompt.add_resource("""
         Ability to run robotframworks scripts via the robot_framework plugin. Information for the robot_framework plugin:
