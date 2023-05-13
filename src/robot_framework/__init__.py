@@ -31,10 +31,11 @@ class AutoGPTRobotframework(AutoGPTPluginTemplate):
         prompt.add_resource("""
         Ability to run robotframworks scripts via the robot_framework plugin. Information for the robot_framework plugin:
         The robotframework script files extension is .robot
-        The output of the robotframework execution it's 3 files output.html, log.html and report.html
+        The output of the robotframework execution is an xunit.xml file with the result of the execution
+        the method run_robotframework return the output in xml format.
         """)
 
-        prompt.add_command("run_robotframework", "Execute an robotframework file.", {}, run_robotframework)
+        prompt.add_command("run_robotframework", "Execute an robotframework file.", {"file":"<file_name>"}, run_robotframework)
 
         return prompt
 
